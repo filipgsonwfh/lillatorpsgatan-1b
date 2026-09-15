@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lillatorpsgatan 1B</title>
+<meta name="description" content="Lägenhet, 4 rum, 93 m², Örgryte, Göteborg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+</head>
+<body>
+<style>
+:root{--bg:#FAF9F6;--surface:#F0EDE6;--surface2:#E6E2D9;--ink:#1D1C19;--muted:#6E6A62;--line:#D9D4CA;--accent:#2F5D50;--accent-ink:#FFFFFF;--accent-soft:#DDE8E3;--warn-soft:#F6E7D6;--warn-ink:#7A4B14;--plan:#FFFFFF;--shadow:0 10px 30px rgba(40,35,25,.12);}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17181A;--surface:#212326;--surface2:#2B2E32;--ink:#ECE9E2;--muted:#A39E94;--line:#363A3F;--accent:#7FB8A4;--accent-ink:#0F1F1A;--accent-soft:#1F3A33;--warn-soft:#3A2C1B;--warn-ink:#E8C08E;--plan:#ECE9E2;--shadow:0 10px 30px rgba(0,0,0,.45);}}
+:root[data-theme="dark"]{--bg:#17181A;--surface:#212326;--surface2:#2B2E32;--ink:#ECE9E2;--muted:#A39E94;--line:#363A3F;--accent:#7FB8A4;--accent-ink:#0F1F1A;--accent-soft:#1F3A33;--warn-soft:#3A2C1B;--warn-ink:#E8C08E;--plan:#ECE9E2;--shadow:0 10px 30px rgba(0,0,0,.45);}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;padding-block:0 64px;padding-inline:16px}
+h1,h2,h3{font-family:Jost,Futura,system-ui,sans-serif;font-weight:500;letter-spacing:-.01em;text-wrap:balance;margin:0}
+.wrap{max-width:1120px;margin:0 auto}
+a{color:var(--accent)}
+.top{display:flex;justify-content:space-between;align-items:baseline;padding-block:22px 14px;gap:16px;flex-wrap:wrap}
+.eyebrow{font-family:Jost,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--muted)}
+.gal{position:relative;background:var(--surface2);border-radius:12px;overflow:hidden;aspect-ratio:3/2;max-width:100%}
+.gal img.main{width:100%;height:100%;object-fit:contain;display:block;background:var(--surface2);cursor:zoom-in}
+.gal img.main.photo{object-fit:cover}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(20,20,20,.55);color:#fff;font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.nav:hover{background:rgba(20,20,20,.8)}
+.nav.prev{left:14px}.nav.next{right:14px}
+.counter{position:absolute;right:14px;bottom:12px;background:rgba(20,20,20,.65);color:#fff;font-family:Jost,sans-serif;font-size:13px;padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.caption{position:absolute;left:14px;bottom:12px;background:rgba(20,20,20,.65);color:#fff;font-size:13px;padding:4px 10px;border-radius:999px}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding-block:10px 4px;scrollbar-width:thin}
+.thumb{flex:0 0 auto;width:92px;height:62px;padding:0;border:2px solid transparent;border-radius:6px;overflow:hidden;background:var(--surface2);cursor:pointer;opacity:.7}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb.on{border-color:var(--accent);opacity:1}
+.thumb:focus-visible,.nav:focus-visible,.btn:focus-visible,.close:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;padding-block:6px 0}
+.btn{font-family:Jost,sans-serif;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--surface2)}
+.head{display:grid;grid-template-columns:1.6fr 1fr;gap:32px;padding-block:28px 8px;align-items:start}
+.status{display:inline-flex;align-items:center;gap:8px;background:var(--warn-soft);color:var(--warn-ink);font-family:Jost,sans-serif;font-size:13px;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+h1{font-size:clamp(30px,4vw,42px);line-height:1.1}
+.sub{color:var(--muted);margin-top:6px}
+.price{font-family:Jost,sans-serif;font-size:clamp(30px,4vw,40px);font-weight:500;font-variant-numeric:tabular-nums;margin-top:18px}
+.price small{display:block;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:500;margin-bottom:2px}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:22px}
+.keys div{padding-block:14px;padding-inline:0 12px}
+.keys div+div{border-left:1px solid var(--line);padding-inline:14px 12px}
+.keys b{display:block;font-family:Jost,sans-serif;font-weight:500;font-size:20px;font-variant-numeric:tabular-nums}
+.keys span{font-size:13px;color:var(--muted)}
+.amen{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:var(--accent);font-family:Jost,sans-serif;font-size:14px;padding:6px 12px;border-radius:999px;margin-top:14px}
+.side{background:var(--surface);border-radius:12px;padding:22px 24px;box-shadow:var(--shadow)}
+.side h3{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:500}
+.side .big{font-family:Jost,sans-serif;font-size:32px;font-weight:500;margin-top:8px;font-variant-numeric:tabular-nums}
+.side .range{color:var(--muted);font-variant-numeric:tabular-nums}
+.side p{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.side .sqm{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums;font-size:15px}
+.side .sqm.last{margin-top:8px;padding-top:0;border:0}
+section{padding-block:36px 0}
+h2{font-size:24px;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;border-top:1px solid var(--line);margin:0}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding-block:11px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.facts dt{color:var(--muted);margin:0}
+.facts dd{margin:0;font-weight:600;text-align:right}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.map{border-radius:12px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;max-width:100%;background:var(--surface2)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.plan{background:var(--plan);border-radius:12px;border:1px solid var(--line);padding:12px}
+.plan img{width:100%;display:block;cursor:zoom-in}
+.note{color:var(--muted);font-size:14px;margin:8px 0 0}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{text-align:left;font-family:Jost,sans-serif;font-weight:500;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding-block:8px;border-bottom:1px solid var(--line)}
+td{padding-block:10px;padding-inline:0 12px;border-bottom:1px solid var(--line)}
+td.num,th.num{text-align:right}
+.pill{font-family:Jost,sans-serif;font-size:12px;background:var(--surface2);padding:2px 9px;border-radius:999px}
+.tblwrap{overflow-x:auto}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px 0;color:var(--muted);font-size:14px}
+.crumbs span+span::before{content:"\203A";margin:0 8px;color:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.grid figure{margin:0;border-radius:8px;overflow:hidden;background:var(--surface2);cursor:zoom-in}
+.grid img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.grid figcaption{font-size:12px;color:var(--muted);padding:6px 8px}
+.lb{position:fixed;inset:0;background:rgba(10,10,10,.94);display:none;align-items:center;justify-content:center;z-index:50}
+.lb.open{display:flex}
+.lb img{max-width:96vw;max-height:92vh;object-fit:contain}
+.lb .nav{background:rgba(255,255,255,.15)}
+.lb .close{position:absolute;top:14px;right:14px;border:0;background:rgba(255,255,255,.15);color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}
+.lb .counter{bottom:18px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:820px){.head,.two{grid-template-columns:1fr}.keys{grid-template-columns:repeat(2,1fr)}.keys div:nth-child(3){border-left:0;padding-inline:0 12px;border-top:1px solid var(--line)}.keys div:nth-child(4){border-top:1px solid var(--line)}.facts{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
+<div class="wrap">
+<div class="top"><span class="eyebrow">Lägenhet · Örgryte · Göteborg</span><span class="eyebrow">Annonserad 2026-09-04</span></div>
+
+<div class="gal" id="gal">
+  <img class="main photo" id="mainImg" src="img/55880543.jpg" alt="Interiör">
+  <button class="nav prev" id="prev" aria-label="Föregående bild">‹</button>
+  <button class="nav next" id="next" aria-label="Nästa bild">›</button>
+  <span class="caption" id="cap">Interiör</span>
+  <span class="counter" id="cnt">1 / 32</span>
+</div>
+<div class="thumbs" id="thumbs"><button class="thumb" data-i="0" aria-label="Bild 1: Interiör"><img loading="lazy" src="img/55880543.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="1" aria-label="Bild 2: Balkong / utsikt"><img loading="lazy" src="img/55880546.jpg" alt="Balkong / utsikt"></button>
+<button class="thumb" data-i="2" aria-label="Bild 3: Interiör"><img loading="lazy" src="img/55880550.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="3" aria-label="Bild 4: Kök / matplats"><img loading="lazy" src="img/55880553.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="4" aria-label="Bild 5: Kök / matplats"><img loading="lazy" src="img/55880557.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="5" aria-label="Bild 6: Interiör"><img loading="lazy" src="img/55880561.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="6" aria-label="Bild 7: Interiör"><img loading="lazy" src="img/55880565.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="7" aria-label="Bild 8: Balkong / utsikt"><img loading="lazy" src="img/55880568.jpg" alt="Balkong / utsikt"></button>
+<button class="thumb" data-i="8" aria-label="Bild 9: Balkong / utsikt"><img loading="lazy" src="img/55880574.jpg" alt="Balkong / utsikt"></button>
+<button class="thumb" data-i="9" aria-label="Bild 10: Balkong / utsikt"><img loading="lazy" src="img/55880580.jpg" alt="Balkong / utsikt"></button>
+<button class="thumb" data-i="10" aria-label="Bild 11: Interiör"><img loading="lazy" src="img/55880584.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="11" aria-label="Bild 12: Interiör"><img loading="lazy" src="img/55880588.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="12" aria-label="Bild 13: Interiör"><img loading="lazy" src="img/55880594.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="13" aria-label="Bild 14: Kök / matplats"><img loading="lazy" src="img/55880600.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="14" aria-label="Bild 15: Kök / matplats"><img loading="lazy" src="img/55880603.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="15" aria-label="Bild 16: Kök / matplats"><img loading="lazy" src="img/55880606.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="16" aria-label="Bild 17: Kök / matplats"><img loading="lazy" src="img/55880609.jpg" alt="Kök / matplats"></button>
+<button class="thumb" data-i="17" aria-label="Bild 18: Interiör"><img loading="lazy" src="img/55880613.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="18" aria-label="Bild 19: Interiör"><img loading="lazy" src="img/55880618.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="19" aria-label="Bild 20: Interiör"><img loading="lazy" src="img/55880623.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="20" aria-label="Bild 21: Interiör"><img loading="lazy" src="img/55880629.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="21" aria-label="Bild 22: Interiör"><img loading="lazy" src="img/55880631.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="22" aria-label="Bild 23: Interiör"><img loading="lazy" src="img/55880634.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="23" aria-label="Bild 24: Badrum / tvätt"><img loading="lazy" src="img/55880636.jpg" alt="Badrum / tvätt"></button>
+<button class="thumb" data-i="24" aria-label="Bild 25: Interiör"><img loading="lazy" src="img/55880640.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="25" aria-label="Bild 26: Badrum / tvätt"><img loading="lazy" src="img/55880642.jpg" alt="Badrum / tvätt"></button>
+<button class="thumb" data-i="26" aria-label="Bild 27: Interiör"><img loading="lazy" src="img/55880646.jpg" alt="Interiör"></button>
+<button class="thumb" data-i="27" aria-label="Bild 28: Badrum / tvätt"><img loading="lazy" src="img/55880651.jpg" alt="Badrum / tvätt"></button>
+<button class="thumb" data-i="28" aria-label="Bild 29: Exteriör"><img loading="lazy" src="img/55880654.jpg" alt="Exteriör"></button>
+<button class="thumb" data-i="29" aria-label="Bild 30: Exteriör"><img loading="lazy" src="img/55880657.jpg" alt="Exteriör"></button>
+<button class="thumb" data-i="30" aria-label="Bild 31: Exteriör"><img loading="lazy" src="img/55880661.jpg" alt="Exteriör"></button>
+<button class="thumb" data-i="31" aria-label="Bild 32: Planritning"><img loading="lazy" src="img/55880663.jpg" alt="Planritning"></button></div>
+<div class="toolbar">
+  <button class="btn" id="toPlan">Planritning</button>
+  <a class="btn" href="#karta">Karta</a>
+  <a class="btn" href="#bilder">Alla bilder</a>
+</div>
+
+<div class="head">
+  <div>
+    <span class="status">Budgivning pågår</span>
+    <h1>Lillatorpsgatan 1B</h1>
+    <div class="sub">Lägenhet · Örgryte · Göteborg · Statstjänstemännens BRF Lilla Torp</div>
+    <div class="price"><small>Utropspris</small>6 100 000 kr</div>
+    <div class="keys">
+      <div><b>93 m²</b><span>Boarea</span></div>
+      <div><b>4 rum</b><span>Rum</span></div>
+      <div><b>5 876 kr/mån</b><span>Avgift</span></div>
+      <div><b>1949</b><span>Byggår</span></div>
+    </div>
+    <span class="amen">Balkong</span>
+  </div>
+  <aside class="side">
+    <h3>Statistisk värdering</h3>
+    <div class="big">6 200 000 kr</div>
+    <div class="range">5 850 000 – 6 540 000 kr</div>
+    <p>Värderingen är statistisk och bygger på uppgifter om bostaden, prisutvecklingen och jämförbara försäljningar i området vid annonstillfället.</p>
+    <div class="sqm"><span>Utropspris per m²</span><b>65 600 kr/m²</b></div>
+    <div class="sqm last"><span>Snitt, stora lägenheter i Centrum (aug 2026)</span><b>65 000 kr/m²</b></div>
+  </aside>
+</div>
+
+<section>
+  <h2>Bostaden</h2>
+  <dl class="facts">
+    <div><dt>Upplåtelseform</dt><dd>Bostadsrätt</dd></div>
+    <div><dt>Bostadstyp</dt><dd>Lägenhet</dd></div>
+    <div><dt>Avgift</dt><dd>5 876 kr/mån</dd></div>
+    <div><dt>Driftskostnad</dt><dd>965 kr/mån</dd></div>
+    <div><dt>Utropspris per kvadratmeter</dt><dd>65 600 kr/m²</dd></div>
+    <div><dt>Våning</dt><dd>3 av 4</dd></div>
+    <div><dt>Lägenhetsnummer</dt><dd>1202</dd></div>
+    <div><dt>Energiklass</dt><dd>D</dd></div>
+    <div><dt>Uppvärmning</dt><dd>Fjärrvärme</dd></div>
+    <div><dt>Byggår</dt><dd>1949</dd></div>
+    <div><dt>Bostadsrättsförening</dt><dd>Statstjänstemännens BRF Lilla Torp</dd></div>
+    <div><dt>Postnummer</dt><dd>416 55 Göteborg</dd></div>
+  </dl>
+  <p class="note">Stora lägenheter (över 80 m²) i Centrum ökade i snitt 3,1 % under budgivning i augusti 2026, vilket för den här bostaden motsvarar 189 100 kr.</p>
+</section>
+
+<section class="two">
+  <div id="karta">
+    <h2>Karta</h2>
+    <div class="map"><iframe title="Karta över Lillatorpsgatan 1B" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=12.017480140000002,57.7011989,12.03348014,57.7091989&amp;layer=mapnik&amp;marker=57.7051989,12.02548014"></iframe></div>
+    <p class="note">Lillatorpsgatan 1B, Örgryte, Göteborg · 57.7051989, 12.02548014 · <a href="https://www.openstreetmap.org/?mlat=57.7051989&amp;mlon=12.02548014#map=17/57.7051989/12.02548014" target="_blank" rel="noopener">Öppna i OpenStreetMap</a></p>
+  </div>
+  <div>
+    <h2>Planritning</h2>
+    <div class="plan"><img id="planImg" src="img/55880663.jpg" alt="Planlösning"></div>
+    <p class="note">93 m², 4 rum, våning 3 av 4.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Områdesplacering</h2>
+  <div class="crumbs"><span>Västra Götalands län</span><span>Göteborgs kommun</span><span>Centrum</span><span>Örgryte</span><span>Lillatorpsgatan</span><span>Statstjänstemännens BRF Lilla Torp</span></div>
+</section>
+
+
+<section id="bilder">
+  <h2>Alla bilder</h2>
+  <div class="grid" id="grid"><figure data-i="0"><img loading="lazy" src="img/55880543.jpg" alt="Interiör"><figcaption>1. Interiör</figcaption></figure><figure data-i="1"><img loading="lazy" src="img/55880546.jpg" alt="Balkong / utsikt"><figcaption>2. Balkong / utsikt</figcaption></figure><figure data-i="2"><img loading="lazy" src="img/55880550.jpg" alt="Interiör"><figcaption>3. Interiör</figcaption></figure><figure data-i="3"><img loading="lazy" src="img/55880553.jpg" alt="Kök / matplats"><figcaption>4. Kök / matplats</figcaption></figure><figure data-i="4"><img loading="lazy" src="img/55880557.jpg" alt="Kök / matplats"><figcaption>5. Kök / matplats</figcaption></figure><figure data-i="5"><img loading="lazy" src="img/55880561.jpg" alt="Interiör"><figcaption>6. Interiör</figcaption></figure><figure data-i="6"><img loading="lazy" src="img/55880565.jpg" alt="Interiör"><figcaption>7. Interiör</figcaption></figure><figure data-i="7"><img loading="lazy" src="img/55880568.jpg" alt="Balkong / utsikt"><figcaption>8. Balkong / utsikt</figcaption></figure><figure data-i="8"><img loading="lazy" src="img/55880574.jpg" alt="Balkong / utsikt"><figcaption>9. Balkong / utsikt</figcaption></figure><figure data-i="9"><img loading="lazy" src="img/55880580.jpg" alt="Balkong / utsikt"><figcaption>10. Balkong / utsikt</figcaption></figure><figure data-i="10"><img loading="lazy" src="img/55880584.jpg" alt="Interiör"><figcaption>11. Interiör</figcaption></figure><figure data-i="11"><img loading="lazy" src="img/55880588.jpg" alt="Interiör"><figcaption>12. Interiör</figcaption></figure><figure data-i="12"><img loading="lazy" src="img/55880594.jpg" alt="Interiör"><figcaption>13. Interiör</figcaption></figure><figure data-i="13"><img loading="lazy" src="img/55880600.jpg" alt="Kök / matplats"><figcaption>14. Kök / matplats</figcaption></figure><figure data-i="14"><img loading="lazy" src="img/55880603.jpg" alt="Kök / matplats"><figcaption>15. Kök / matplats</figcaption></figure><figure data-i="15"><img loading="lazy" src="img/55880606.jpg" alt="Kök / matplats"><figcaption>16. Kök / matplats</figcaption></figure><figure data-i="16"><img loading="lazy" src="img/55880609.jpg" alt="Kök / matplats"><figcaption>17. Kök / matplats</figcaption></figure><figure data-i="17"><img loading="lazy" src="img/55880613.jpg" alt="Interiör"><figcaption>18. Interiör</figcaption></figure><figure data-i="18"><img loading="lazy" src="img/55880618.jpg" alt="Interiör"><figcaption>19. Interiör</figcaption></figure><figure data-i="19"><img loading="lazy" src="img/55880623.jpg" alt="Interiör"><figcaption>20. Interiör</figcaption></figure><figure data-i="20"><img loading="lazy" src="img/55880629.jpg" alt="Interiör"><figcaption>21. Interiör</figcaption></figure><figure data-i="21"><img loading="lazy" src="img/55880631.jpg" alt="Interiör"><figcaption>22. Interiör</figcaption></figure><figure data-i="22"><img loading="lazy" src="img/55880634.jpg" alt="Interiör"><figcaption>23. Interiör</figcaption></figure><figure data-i="23"><img loading="lazy" src="img/55880636.jpg" alt="Badrum / tvätt"><figcaption>24. Badrum / tvätt</figcaption></figure><figure data-i="24"><img loading="lazy" src="img/55880640.jpg" alt="Interiör"><figcaption>25. Interiör</figcaption></figure><figure data-i="25"><img loading="lazy" src="img/55880642.jpg" alt="Badrum / tvätt"><figcaption>26. Badrum / tvätt</figcaption></figure><figure data-i="26"><img loading="lazy" src="img/55880646.jpg" alt="Interiör"><figcaption>27. Interiör</figcaption></figure><figure data-i="27"><img loading="lazy" src="img/55880651.jpg" alt="Badrum / tvätt"><figcaption>28. Badrum / tvätt</figcaption></figure><figure data-i="28"><img loading="lazy" src="img/55880654.jpg" alt="Exteriör"><figcaption>29. Exteriör</figcaption></figure><figure data-i="29"><img loading="lazy" src="img/55880657.jpg" alt="Exteriör"><figcaption>30. Exteriör</figcaption></figure><figure data-i="30"><img loading="lazy" src="img/55880661.jpg" alt="Exteriör"><figcaption>31. Exteriör</figcaption></figure><figure data-i="31"><img loading="lazy" src="img/55880663.jpg" alt="Planritning"><figcaption>32. Planritning</figcaption></figure></div>
+</section>
+
+<footer>Sparad kopia av bostadsannonsen för Lillatorpsgatan 1B, hämtad 2026-09-15. Uppgifterna avser annonstillfället.</footer>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-label="Bildvisning">
+  <button class="close" id="lbClose" aria-label="Stäng">×</button>
+  <button class="nav prev" id="lbPrev" aria-label="Föregående bild">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="nav next" id="lbNext" aria-label="Nästa bild">›</button>
+  <span class="counter" id="lbCnt"></span>
+</div>
+
+<script>
+const IMGS=[{"src": "img/55880543.jpg", "label": "Interiör"}, {"src": "img/55880546.jpg", "label": "Balkong / utsikt"}, {"src": "img/55880550.jpg", "label": "Interiör"}, {"src": "img/55880553.jpg", "label": "Kök / matplats"}, {"src": "img/55880557.jpg", "label": "Kök / matplats"}, {"src": "img/55880561.jpg", "label": "Interiör"}, {"src": "img/55880565.jpg", "label": "Interiör"}, {"src": "img/55880568.jpg", "label": "Balkong / utsikt"}, {"src": "img/55880574.jpg", "label": "Balkong / utsikt"}, {"src": "img/55880580.jpg", "label": "Balkong / utsikt"}, {"src": "img/55880584.jpg", "label": "Interiör"}, {"src": "img/55880588.jpg", "label": "Interiör"}, {"src": "img/55880594.jpg", "label": "Interiör"}, {"src": "img/55880600.jpg", "label": "Kök / matplats"}, {"src": "img/55880603.jpg", "label": "Kök / matplats"}, {"src": "img/55880606.jpg", "label": "Kök / matplats"}, {"src": "img/55880609.jpg", "label": "Kök / matplats"}, {"src": "img/55880613.jpg", "label": "Interiör"}, {"src": "img/55880618.jpg", "label": "Interiör"}, {"src": "img/55880623.jpg", "label": "Interiör"}, {"src": "img/55880629.jpg", "label": "Interiör"}, {"src": "img/55880631.jpg", "label": "Interiör"}, {"src": "img/55880634.jpg", "label": "Interiör"}, {"src": "img/55880636.jpg", "label": "Badrum / tvätt"}, {"src": "img/55880640.jpg", "label": "Interiör"}, {"src": "img/55880642.jpg", "label": "Badrum / tvätt"}, {"src": "img/55880646.jpg", "label": "Interiör"}, {"src": "img/55880651.jpg", "label": "Badrum / tvätt"}, {"src": "img/55880654.jpg", "label": "Exteriör"}, {"src": "img/55880657.jpg", "label": "Exteriör"}, {"src": "img/55880661.jpg", "label": "Exteriör"}, {"src": "img/55880663.jpg", "label": "Planritning"}];
+let i=0;
+const main=document.getElementById('mainImg'),cap=document.getElementById('cap'),cnt=document.getElementById('cnt'),thumbs=document.getElementById('thumbs');
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCnt=document.getElementById('lbCnt');
+function show(n){i=(n+IMGS.length)%IMGS.length;const im=IMGS[i];main.src=im.src;main.alt=im.label;main.classList.toggle('photo',im.label!=='Planritning');cap.textContent=im.label;cnt.textContent=(i+1)+' / '+IMGS.length;
+  thumbs.querySelectorAll('.thumb').forEach((t,k)=>t.classList.toggle('on',k===i));const on=thumbs.querySelector('.thumb.on');if(on)on.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
+  if(lb.classList.contains('open')){lbImg.src=im.src;lbImg.alt=im.label;lbCnt.textContent=(i+1)+' / '+IMGS.length+' \u00b7 '+im.label;}}
+document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('lbPrev').onclick=()=>show(i-1);document.getElementById('lbNext').onclick=()=>show(i+1);
+thumbs.addEventListener('click',e=>{const t=e.target.closest('.thumb');if(t)show(+t.dataset.i);});
+document.getElementById('toPlan').onclick=()=>{show(IMGS.length-1);document.getElementById('gal').scrollIntoView({behavior:'smooth'});};
+function openLb(n){show(n);lb.classList.add('open');lbImg.src=IMGS[i].src;lbImg.alt=IMGS[i].label;lbCnt.textContent=(i+1)+' / '+IMGS.length+' \u00b7 '+IMGS[i].label;document.body.style.overflow='hidden';}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+main.onclick=()=>openLb(i);
+document.getElementById('grid').addEventListener('click',e=>{const f=e.target.closest('figure');if(f)openLb(+f.dataset.i);});
+document.getElementById('planImg').onclick=()=>openLb(IMGS.length-1);
+document.getElementById('lbClose').onclick=closeLb;lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(i-1);else if(e.key==='ArrowRight')show(i+1);else if(e.key==='Escape')closeLb();});
+let sx=null;const gal=document.getElementById('gal');
+gal.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+gal.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)show(dx<0?i+1:i-1);sx=null;});
+show(0);
+</script>
+
+</body>
+</html>
