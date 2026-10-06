@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Planera · Lillatorpsgatan 1B</title>
+<meta name="description" content="Möblera Lillatorpsgatan 1B i olika versioner, direkt i webbläsaren.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Lillatorpsgatan 1B</h1>
+  <span class="total" id="total"></span>
+  <button class="verbtn" id="verbtn" title="Byt eller skapa version"><span>Version</span><b id="vername"></b><span aria-hidden="true">▾</span></button>
+</header>
+<div id="app">
+  <div id="planwrap">
+    <svg id="plan" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Läge">
+        <button id="mode-mobler" aria-pressed="true">Möbler</button>
+        <button id="mode-rum" aria-pressed="false">Väggar</button>
+      </div>
+      <button class="tbtn" id="measure" aria-pressed="false">Mät</button>
+      <button class="tbtn" id="undo" title="Ångra">Ångra</button>
+    </div>
+    <div class="tools-r">
+      <button class="tbtn" id="zoomin" aria-label="Zooma in">+</button>
+      <button class="tbtn" id="zoomout" aria-label="Zooma ut">−</button>
+      <button class="tbtn" id="fit" aria-label="Visa hela">⤢</button>
+    </div>
+    <div id="hint"></div>
+    <div id="status" class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <div class="right">
+    <div id="banner"></div>
+    <div id="selbar"></div>
+    <div id="panel">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" data-tab="mobler" aria-selected="true">Möbler</button>
+        <button class="tab" role="tab" data-tab="rum" aria-selected="false">Rum</button>
+        <button class="tab" role="tab" data-tab="oppningar" aria-selected="false">Dörrar</button>
+        <button class="tab" role="tab" data-tab="versioner" aria-selected="false">Versioner</button>
+        <button class="tab" role="tab" data-tab="mer" aria-selected="false">Mer</button>
+      </div>
+      <div class="content" id="content"></div>
+    </div>
+  </div>
+</div>
+<script src="plan.js"></script>
+<script src="versions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
